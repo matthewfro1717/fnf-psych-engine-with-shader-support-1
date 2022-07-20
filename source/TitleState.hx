@@ -116,10 +116,6 @@ class TitleState extends MusicBeatState
 		titleJSON = Json.parse(Assets.getText(path)); 
 		#end
 		
-		#if POLYMOD_ALLOWED
-		polymod.Polymod.init({modRoot: "mods", dirs: ['introMod']});
-		#end
-		
 		#if CHECK_FOR_UPDATES
 		if(!closedState) {
 			trace('checking for update');
